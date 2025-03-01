@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLUEPRINT</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png"  alt="BLUEPRINT Logo">
+                <img src="./images/logo2.png" alt="BLUEPRINT Logo" class="fade-in">
             </div>
-            <nav>
+            
+            <div class="search-container fade-in-delay">
+                <form action="#" class="search-form">
+                    <input type="search" placeholder="Search products..." class="search-input">
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            <nav class="fade-in-delay-2">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,42 +37,98 @@
 
     <main>
         <section class="hero">
-            <div class="container">
-                <h1>Welcome to BLUEPRINT INDUSTRY</h1>
-                <p>Your one-stop shop for premium electric products</p>
-                <a href="#" class="btn">
-                    Shop Now
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="9" cy="21" r="1"></circle>
-                        <circle cx="20" cy="21" r="1"></circle>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                    </svg>
-                </a>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="slide-up">Welcome to BLUEPRINT</h1>
+                    <p class="slide-up-delay">Your one-stop shop for premium electric products</p>
+                    <a href="#products" class="btn slide-up-delay-2">
+                        Shop Now
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <img src="./images/preview6.JPG" alt="Hero Image" class="floating">
+                </div>
             </div>
         </section>
 
-        <section class="featured-products">
+        <section id="about" class="about">
             <div class="container">
-                <h2>Featured Products</h2>
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-description">
+                            We are dedicated to delivering exceptional products and services that enhance your everyday life.
+                            Our commitment to quality and innovation drives everything we do. With a focus on customer satisfaction and technological advancement, we strive to exceed expectations in every aspect of our business.
+                            We believe in building lasting relationships with our customers through transparency, reliability, and outstanding service.
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="products" class="featured-products scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
                 <div class="product-grid">
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/48" alt="Electric Tree Trimmer">
-                        <h3>Auto adjustable electric tree trimmer</h3>
-                        <p></p>
+                    
+                    <div class="product-card scroll-reveal-item">
+                        <div class="product-image">
+                            <img src="./images/preview6.JPG" alt="Portable Power Bank">
+                            
+                        </div>
+                        <h3>Branch Master</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            
+                        </div>
+                        <p>High-capacity mobile charging with fast-charge technology and multiple ports</p>
+                        <div class="product-price">Rs.19999.99</div>
                         <a href="#" class="btn btn-outline">Learn More</a>
                     </div>
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/48" alt="Portable Power Bank">
-                        <h3>Portable Power Bank</h3>
-                        <p>High-capacity mobile charging</p>
-                        <a href="#" class="btn btn-outline">Learn More</a>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="contact" class="contact scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card scroll-reveal-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Visit Us</h3>
+                            <p>123 Tech Street<br>Silicon Valley, CA 94025</p>
+                            <a href="https://maps.google.com" target="_blank" class="contact-link">View on Map</a>
+                        </div>
+                        <!-- <div class="contact-card scroll-reveal-item">
+                            <i class="fas fa-phone"></i>
+                            <h3>Call Us</h3>
+                            <p>011-9282010</p>
+                            <p class="hours">Mon - Fri, 9am - 6pm</p>
+                            <a href="tel:+0119282010" class="contact-link">Call Now</a>
+                        </div> -->
+                        <div class="contact-card scroll-reveal-item">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p>contact.blueprints.uor@gmail.com
+                            </p>
+                            <a href="mailto:contact.blueprints.uor@gmail.com
+" class="contact-link">Send Email</a>
+                        </div>
                     </div>
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/48" alt="Smart Home Hub">
-                        <h3>Smart Home Hub</h3>
-                        <p>Central control for your smart devices</p>
-                        <a href="#" class="btn btn-outline">Learn More</a>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -68,9 +136,119 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 BLUEPRINT. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About BLUEPRINT</h3>
+                    <p>Your trusted source for premium electronic products and smart home solutions since 2015.</p>
+                    
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@blueprint.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 BLUEPRINT. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Scroll reveal animation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll reveal animation
+            const scrollRevealItems = document.querySelectorAll('.scroll-reveal, .scroll-reveal-item');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            scrollRevealItems.forEach(item => {
+                observer.observe(item);
+            });
+            
+            // Count up animation for stats
+            const countUpElements = document.querySelectorAll('.count-up .stat-number');
+            
+            countUpElements.forEach(element => {
+                const target = parseInt(element.getAttribute('data-count'));
+                const duration = 2000; // 2 seconds
+                const step = target / (duration / 16); // 60fps
+                let current = 0;
+                
+                const updateCount = () => {
+                    current += step;
+                    if (current < target) {
+                        element.textContent = Math.floor(current);
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        element.textContent = target;
+                    }
+                };
+                
+                const statsObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            updateCount();
+                            statsObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                statsObserver.observe(element);
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-
